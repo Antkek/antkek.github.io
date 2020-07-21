@@ -19,25 +19,11 @@ $(function () {
 
           $('#ban5').html(' <iframe src="./big_banners/MF_Bistrolet_RBC_100Px250/index.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
           $(window).unbind('scroll');
+          
       }
   });
-  
-  var reviews = $('.banners_big');
-  var reviewsTop = reviews.offset().top;
-  $(window).bind('scroll', function () {
-   
-      var windowTop = $(this).scrollTop();
-      if (windowTop > reviewsTop) {
-          $('.banners_video').html("<video preload='metadata' loop muted class='video' src='mp4/MGTS_Egg_Youtube_1920x1080.mp4' controls preload='auto'>Ваш браузер не поддерживает тег video.</video><video preload='metadata' loop muted  class='video' src='mp4/Avito_WiFi_1136x640.mp4' controls preload='auto'>Ваш браузер не поддерживает тег video.</video><video preload='metadata'  loop muted class='video' src='mp4/OnBoarding.mp4' controls preload='auto'>Ваш браузер не поддерживает тег video.</video><video preload='metadata' loop muted  class='video' src='mp4/LADA_anticovid_FB_1400x1000.mp4' controls preload='auto'>Ваш браузер не поддерживает тег video.</video>");
-          $(window).unbind('scroll');
-
-     
-      }
-  });
-
-
-});
-
+} 
+);
 
 $('.banners').slick({
   slidesToShow: 1,
