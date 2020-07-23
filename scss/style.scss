@@ -122,13 +122,17 @@ body {
   0% {
     opacity: 1;
     right: -24px;
-   
+
   }
 
   100% {
     opacity: 0;
     right: 100px;
   }
+}
+
+iframe {
+  border: 0;
 }
 
 .ui-widget-content {
@@ -143,7 +147,7 @@ body {
 
   .swipe {
     animation: moveLinear 3s linear normal infinite;
-    animation-timing-function: ease; 
+    animation-timing-function: ease;
     width: 50px;
     position: absolute;
     bottom: -28px;
@@ -153,13 +157,23 @@ body {
 }
 
 
+// .slick-current {
+//   div {
+//     .banners__item {
+//       iframe {
+//         border: 2px solid red;
+//       }
+//     }
+//   }
+// }
+
 
 .two {
-  height: 204.5px;
+  height: 200px;
 }
 
 .three {
-  height: 253.5px;
+  height: 250px;
 }
 
 
@@ -229,6 +243,36 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0 20px;
+
+  #ban,
+  #ban2,
+  #ban3,
+  #ban4,
+  #ban5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+      box-shadow: 0 0 10px #fff;
+      .ban__icon {
+        opacity: 1;
+        height: 85px;
+      }
+    }
+    .ban__icon {
+
+      opacity: .7;
+      transition: all .3s linear;
+      height: 65px;
+    }
+  }
 }
 
 .section_header {

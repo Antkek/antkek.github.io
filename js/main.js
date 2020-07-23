@@ -1,29 +1,24 @@
 $(function () {
-  var reviews = $('.banners');
-  var reviewsTop = reviews.offset().top;
-  $(window).bind('scroll', function () {
-   
-      var windowTop = $(this).scrollTop();
-      if (windowTop > reviewsTop) {
-          $('#ban').html('<iframe src="./big_banners/MTS_Invest_Sostav_100Px200/MTS_Invest_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-          $(window).unbind('scroll');
-
-          $('#ban2').html('<iframe src="./big_banners/MTS_VoLTE_Sostav_100Px200/MTS_VoLTE_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-          $(window).unbind('scroll');
-
-          $('#ban3').html('<iframe class="big" src="./small_banners/MTS_iPhone_Afisha_Mobile_100Px250/index.html" width="100%"height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-          $(window).unbind('scroll');
-
-          $('#ban4').html('<iframe src="./big_banners/mtsspam/MTS_SPAM_940x250.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-          $(window).unbind('scroll');
-
-          $('#ban5').html(' <iframe src="./big_banners/MF_Bistrolet_RBC_100Px250/index.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-          $(window).unbind('scroll');
-          
-      }
+  
+  $( "#ban" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+    $( "#ban" ).html('<iframe src="./big_banners/MTS_Invest_Sostav_100Px200/MTS_Invest_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
   });
-} 
-);
+
+  $( "#ban2" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+    $( "#ban2" ).html('<iframe src="./big_banners/MTS_VoLTE_Sostav_100Px200/MTS_VoLTE_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  });
+
+  $( "#ban3" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+    $( "#ban3" ).html('<iframe class="big" src="./small_banners/MTS_iPhone_Afisha_Mobile_100Px250/index.html" width="100%"height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  });
+
+  $( "#ban4" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+    $( "#ban4" ).html('<iframe src="./big_banners/mtsspam/MTS_SPAM_940x250.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  });
+
+  $( "#ban5" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+    $( "#ban5" ).html('<iframe src="./big_banners/MF_Bistrolet_RBC_100Px250/index.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  });
 
 $('.banners').slick({
   slidesToShow: 1,
@@ -85,10 +80,14 @@ let interval = setTimeout(function () {
   }
 
 }, 7000, clearTimeout);
+});
+
+
+  
 
 
 $(window).on('load', function () {
-  $('.preloader').delay(1000).fadeOut('slow');
+  $('.preloader').delay(2000).fadeOut('slow');
 });
 
 
