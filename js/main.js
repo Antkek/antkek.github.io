@@ -38,7 +38,7 @@ $('.slider-dots').slick({
  
   variableWidth: true,
   autoplay: true,
-  autoplaySpeed: 16000,
+  autoplaySpeed: 9000,
   focusOnSelect: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -67,8 +67,28 @@ $(document).ready(function () {
   $("#resizable_4").resizable({ handles: 'e', minWidth: 950 });
 });
 
+let interval = setTimeout(function () {
+
+  if ($(".slick-track .slick-slide").hasClass("slick-active")) {
+    $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+    $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+
+    $('#slide2').html('<iframe src="./small_banners/MTS_Conv4_Segmento_240x400/MTS_Convergent_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+
+    $('#slide3').html('<iframe src="./small_banners/MTS_Home_Segmento_240x400/MTS_Home_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+
+    $('#slide4').html('<iframe src="./small_banners/ter/MTS_Sputnik_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+
+    $('#slide5').html(' <iframe src="./small_banners/WASD_SL4_Zanuda_Mail_Pochta_240x400/WASD_SL4_Zanuda_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+
+    $('#slide6').html(' <iframe src="./small_banners/WASD_Stream_Basic_Yandex_RTB_240x400/WASD_Stream_Basic_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
+  }
+
+}, 7000, clearTimeout);
+
+
 $(window).on('load', function () {
-  $('.preloader').delay(2000).fadeOut('slow');
+  $('.preloader').delay(1000).fadeOut('slow');
 });
 
 
