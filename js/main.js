@@ -1,22 +1,22 @@
 $(function () {
   
-  $( "#ban" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
-    $( "#ban" ).html('<iframe src="./big_banners/MTS_Invest_Sostav_100Px200/MTS_Invest_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  $( "#ban" ).click(function(){
+    $( "#ban" ).html('<iframe src="./big_banners/MTS_Invest_Sostav_100Px200/MTS_Invest_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); 
   });
 
-  $( "#ban2" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
-    $( "#ban2" ).html('<iframe src="./big_banners/MTS_VoLTE_Sostav_100Px200/MTS_VoLTE_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  $( "#ban2" ).click(function(){ 
+    $( "#ban2" ).html('<iframe src="./big_banners/MTS_VoLTE_Sostav_100Px200/MTS_VoLTE_100Px200.html" width="100%" height="200px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); 
   });
 
-  $( "#ban3" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
-    $( "#ban3" ).html('<iframe class="big" src="./small_banners/MTS_iPhone_Afisha_Mobile_100Px250/index.html" width="100%"height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  $( "#ban3" ).click(function(){ 
+    $( "#ban3" ).html('<iframe class="big" src="./small_banners/MTS_iPhone_Afisha_Mobile_100Px250/index.html" width="100%"height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); 
   });
 
-  $( "#ban4" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
-    $( "#ban4" ).html('<iframe src="./big_banners/mtsspam/MTS_SPAM_940x250.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
+  $( "#ban4" ).click(function(){ 
+    $( "#ban4" ).html('<iframe src="./big_banners/mtsspam/MTS_SPAM_940x250.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); 
   });
 
-  $( "#ban5" ).click(function(){ // задаем функцию при вхождении указателя мыши в элемент <div>
+  $( "#ban5" ).click(function(){ 
     $( "#ban5" ).html('<iframe src="./big_banners/MF_Bistrolet_RBC_100Px250/index.html" width="100%" height="250px">Ваш браузер не поддерживает плавающие фреймы!</iframe>'); // изменяем цвет заднего фона
   });
 
@@ -63,7 +63,6 @@ $(document).ready(function () {
 });
 
 let interval = setTimeout(function () {
-
   if ($(".slick-track .slick-slide").hasClass("slick-active")) {
     $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
     $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
@@ -78,7 +77,6 @@ let interval = setTimeout(function () {
 
     $('#slide6').html(' <iframe src="./small_banners/WASD_Stream_Basic_Yandex_RTB_240x400/WASD_Stream_Basic_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
   }
-
 }, 7000, clearTimeout);
 });
 
