@@ -38,7 +38,7 @@ $('.slider-dots').slick({
  
   variableWidth: true,
   autoplay: true,
-  autoplaySpeed: 9000,
+  autoplaySpeed: 16000,
   focusOnSelect: true,
   slidesToShow: 3,
   slidesToScroll: 1,
