@@ -59,7 +59,7 @@ let interval = setTimeout(function () {
 
     $('#slide6').html(' <iframe src="./small_banners/WASD_Stream_Basic_Yandex_RTB_240x400/WASD_Stream_Basic_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
   }
-}, 3000, clearTimeout);
+}, 5000, clearTimeout);
 });
 
 // ADAPTIV BANNERS
