@@ -49,8 +49,6 @@ let interval = setTimeout(function () {
 
     $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
 
-    $('#slide1').html(' <iframe src="./small_banners/LADA_Deal_240x400/LADA_Deal_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
-
     $('#slide2').html('<iframe src="./small_banners/MTS_Conv4_Segmento_240x400/MTS_Convergent_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
 
     $('#slide3').html('<iframe src="./small_banners/MTS_Home_Segmento_240x400/MTS_Home_240x400.html" width="240px" height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
@@ -61,7 +59,7 @@ let interval = setTimeout(function () {
 
     $('#slide6').html(' <iframe src="./small_banners/WASD_Stream_Basic_Yandex_RTB_240x400/WASD_Stream_Basic_240x400.html" width="240px"height="400px">Ваш браузер не поддерживает плавающие фреймы!</iframe>');
   }
-}, 4000, clearTimeout);
+}, 3000, clearTimeout);
 });
 
 // ADAPTIV BANNERS
