@@ -2,120 +2,131 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>AntBanners</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
 </head>
 
-<body>
-
-
+<body class="no-scroll">
   <div class="preloader">
     <div id="loader"></div>
   </div>
 
-  <div class="banners_small">
-
-    <div class="banners">
-
-      <div class="banners__item" id="slide">
-
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">Anton M.</h1>
+      <div class="header__suptitle">Digital Designer</div>
+      <div class="header__text_block">
+        <p class="header__text">
+          Привет, я Антон! Моя специализация — дизайн рекламы в digital. Каждый
+          день я готовлю рекламные креативы крупных брендов-клиентов для
+          большинства популярных площадок. Я открыт к сотрудничеству и рад помочь
+          реализовать Вашу рекламную кампанию. Некоторые из моих работ можно
+          посмотреть ниже.
+        </p>
+        <p class="header__text">
+          Hello, I'm Anton! My specialization is digital ads design. Every day I
+          make huge brands-clients advertising creatives for most popular
+          platforms. I'm open for collaboration and always glad to carry your
+          advertising campaign. You can see some of my works below.
+        </p>
       </div>
-
-      <div class="banners__item" id="slide1">
-
-      </div>
-
-      <div class="banners__item" id="slide2">
-
-      </div>
-
-      <div class="banners__item" id="slide3">
-
-      </div>
-
-      <div class="banners__item" id="slide4">
-
-      </div>
-
-      <div class="banners__item" id="slide5">
-
-      </div>
-
-      <div class="banners__item" id="slide6">
-
+      <div class="scroll-down" data-scroll="#works">
+        <span>
+          <img src="img/Arrow_bottom.svg">
+        </span>
       </div>
 
     </div>
-    <div class="container">
-      <div class="slider-dots">
+  </header>
+ 
+  <div class="banners_small" id="works">
 
-        <div class="slider-dots__item">
-          <img src="img/banners_img/BBDO_MTS_Cashback_Mail_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/LADA_Deal_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/MTS_Conv4_Segmento_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/MTS_Home_Segmento_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/MTS_Sputnik_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/WASD_SL4_Zanuda_Mail_Pochta_240x400.png" alt="">
-        </div>
-        <div class="slider-dots__item">
-          <img src="img/banners_img/WASD_Stream_Basic_240x400.png" alt="">
-        </div>
-      </div>
+    <div class="banners__item wow bounceInUp " id="slide"><img  src="img/banners_img/BBDO_MTS_Cashback_Mail_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
     </div>
+
+    <div class="banners__item wow bounceInUp" id="slide1"><img src="img/banners_img/LADA_Deal_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
+    </div>
+
+    <div class="banners__item wow bounceInUp" id="slide2"><img src="img/banners_img/MTS_Conv4_Segmento_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
+    </div>
+
+    <div class="banners__item wow bounceInUp" id="slide3"><img src="img/banners_img/MTS_Sputnik_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
+    </div>
+
+    <div class="banners__item wow bounceInUp" id="slide4"><img src="img/banners_img/WASD_SL4_Zanuda_Mail_Pochta_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
+    </div>
+
+    <div class="banners__item wow bounceInUp" id="slide5"><img src="img/banners_img/WASD_Stream_Basic_240x400.png" alt="">
+      <img class="ban__icon-sm" src="img/play-button.svg" />
+    </div>
+
   </div>
 
 
-  <div class="banners_big">
 
+  <div class="banners_big">
     <section class="section_header">
       <h2>Адаптивные баннеры</h2>
     </section>
 
-    <div id="resizable" class="ui-widget-content two">
-      <div id="ban" style="background-image: url(../img/bigbanners_img/MTS_Invest_100Px200.png);">
-        <img class="ban__icon" src="img/play-button.svg">
+    <div id="resizable" class="ui-widget-content two wow fadeInLeftBig">
+      <div id="ban" style="
+            background-image: url(../img/bigbanners_img/MTS_Invest_100Px200.png);
+          ">
+        <img class="ban__icon" src="img/play-button.svg" />
       </div>
-      <img class="swipe" src="img/swipe.svg" alt="">
+      <img class="swipe" src="img/swipe.svg" alt="" />
     </div>
 
-    <div id="resizable_2" class="ui-widget-content two">
-      <div id="ban2" style=" align-items: center;
-      background-image: url(../img/bigbanners_img/MTS_VoLTE_100Px200.png);">
-        <img class="ban__icon" src="img/play-button.svg">
+    <div id="resizable_2" class="ui-widget-content two wow fadeInLeftBig">
+      <div id="ban2" style="
+            align-items: center;
+            background-image: url(../img/bigbanners_img/MTS_VoLTE_100Px200.png);
+          ">
+        <img class="ban__icon" src="img/play-button.svg" />
       </div>
-      <img class="swipe" src="img/swipe.svg" alt="">
+      <img class="swipe" src="img/swipe.svg" alt="" />
     </div>
 
-    <div id="resizable_3" class="ui-widget-content three">
-      <div id="ban3" style="background-image: url(../img/bigbanners_img/MTS_iPhone_Afisha_Mobile_100Px250.png);"> <img class="ban__icon" src="img/play-button.svg"></div>
-      <img class="swipe" src="img/swipe.svg" alt="">
+    <div id="resizable_3" class="ui-widget-content three wow fadeInLeftBig">
+      <div id="ban3" style="
+            background-image: url(../img/bigbanners_img/MTS_iPhone_Afisha_Mobile_100Px250.png);
+          ">
+        <img class="ban__icon" src="img/play-button.svg" />
+      </div>
+
+      <img class="swipe" src="img/swipe.svg" alt="" />
     </div>
 
-    <div id="resizable_4" class="ui-widget-content three">
-      <div id="ban4" style="background-image: url(../img/bigbanners_img/MTS_SPAM_940x250.png);"> <img class="ban__icon" src="img/play-button.svg"></div>
-      <img class="swipe" src="img/swipe.svg" alt="">
+    <div id="resizable_4" class="ui-widget-content three wow fadeInLeftBig">
+      <div id="ban4" style="
+            background-image: url(../img/bigbanners_img/MTS_SPAM_940x250.png);
+          ">
+        <img class="ban__icon" src="img/play-button.svg" />
+      </div>
+
+      <img class="swipe" src="img/swipe.svg" alt="" />
     </div>
 
-    <div id="resizable_5" class="ui-widget-content three">
-      <div id="ban5" style="background-image: url(../img/bigbanners_img/MF_Bistrolet_RBC_100Px250.png);"> <img class="ban__icon" src="img/play-button.svg"></div>
-      <img class="swipe" src="img/swipe.svg" alt="">
+    <div id="resizable_5" class="ui-widget-content three wow fadeInLeftBig">
+      <div id="ban5" style="
+            background-image: url(../img/bigbanners_img/MF_Bistrolet_RBC_100Px250.png);
+          ">
+        <img class="ban__icon" src="img/play-button.svg" />
+      </div>
+
+      <img class="swipe" src="img/swipe.svg" alt="" />
     </div>
-
-
-
   </div>
 
   <section class="section_header">
@@ -123,28 +134,26 @@
   </section>
 
   <div class="banners_video">
-
-    <video preload="metadata" loop muted class='video' src="mp4/MGTS_Egg_Youtube_1920x1080.mp4" controls preload='auto'>
+    <video class="wow fadeInLeftBig" preload="metadata" loop muted class="video" src="mp4/MGTS_Egg_Youtube_1920x1080.mp4" controls preload="auto">
       Ваш браузер не поддерживает тег video.
     </video>
 
-    <video preload="metadata" loop muted class='video' src="mp4/Avito_WiFi_1136x640.mp4" controls preload='auto'>
+    <video class="wow fadeInRightBig" preload="metadata" loop muted class="video" src="mp4/Avito_WiFi_1136x640.mp4" controls preload="auto">
       Ваш браузер не поддерживает тег video.
     </video>
 
-    <video preload="metadata" loop muted class='video' src="mp4/OnBoarding.mp4" controls preload='auto'>
+    <video class="wow fadeInLeftBig" preload="metadata" loop muted class="video" src="mp4/OnBoarding.mp4" controls preload="auto">
       Ваш браузер не поддерживает тег video.
     </video>
 
-    <video preload="metadata" loop muted class='video' src="mp4/LADA_anticovid_FB_1400x1000.mp4" controls
-      preload='auto'>
+    <video class="wow fadeInRightBig" preload="metadata" loop muted class="video" src="mp4/LADA_anticovid_FB_1400x1000.mp4" controls
+      preload="auto">
       Ваш браузер не поддерживает тег video.
     </video>
-
   </div>
 
-
-
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 

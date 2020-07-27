@@ -1,7 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
+@import url(https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css);
 // *,
 // *:before,
 // *:after {
@@ -19,16 +19,21 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #e30613;
-  ;
+  
   background-size: contain;
 
   border-radius: 17px;
 }
 
 body {
+  font-family: Montserrat, sans-serif;
   background-color: rgba(38, 38, 40, 1);
-}
+  color: #fff;
 
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
 
 .preloader {
   position: fixed;
@@ -111,12 +116,6 @@ body {
   }
 }
 
-.page {
-  overflow: hidden;
-  position: relative;
-}
-
-@import url(https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css);
 
 @keyframes moveLinear {
   0% {
@@ -128,6 +127,85 @@ body {
   100% {
     opacity: 0;
     right: 100px;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 1;
+    top: 10px;
+
+  }
+
+  100% {
+    opacity: 0;
+    top: 33px;
+  }
+}
+
+
+.page {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.header {
+  position: relative;
+  padding: 120px 90px;
+  background-color: rgba(44, 62, 80, 0.3);
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
+  height: 80vh;
+  
+  &__title {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+
+  &__suptitle {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+
+  &__text {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: none;
+  }
+}
+
+.scroll-down {
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -15px;
+  display: block;
+  z-index: 10;
+  text-align: center;
+
+  img {
+    animation-name: scroll-down;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    width: 25px;
+    position: absolute;
+    left: 13px;
+    z-index: 20;
   }
 }
 
@@ -156,18 +234,6 @@ iframe {
   }
 }
 
-
-// .slick-current {
-//   div {
-//     .banners__item {
-//       iframe {
-//         border: 2px solid red;
-//       }
-//     }
-//   }
-// }
-
-
 .two {
   height: 200px;
 }
@@ -176,66 +242,40 @@ iframe {
   height: 250px;
 }
 
-
 .banners_small {
-  width: 70%;
-  margin: 100px auto;
-}
+  padding: 100px 0 20px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-.banners {
-  margin: 0 auto;
-
-  &__item {
+  .banners__item {
+    cursor: pointer;
     position: relative;
-    // background-color: #ff0;
-    margin-bottom: 450px;
+    margin: 0 60px 80px;
 
-    iframe {
-      // display: none;
-      border: 0;
+    &:hover {
+      box-shadow: 0 0 10px #fff;
+
+      .ban__icon-sm {
+        opacity: 1;
+        height: 75px;
+        width: 75px;
+      }
+    }
+
+    .ban__icon-sm {
       position: absolute;
-      top: 0;
-      left: 52%;
+      top: 40%;
+      left: 100%;
       margin-left: -150px;
-
+      opacity: .7;
+      transition: all .2s linear;
+      height: 65px;
+      width: 65px;
     }
   }
 }
-
-.slider-dots__item {
-  outline: none;
-  overflow: hidden;
-
-  img {
-
-    cursor: pointer;
-    height: 21vh;
-    margin: 0 50px;
-  }
-
-}
-
-.slider-studio_left,
-.slider-studio_right {
-  cursor: pointer;
-}
-
-.slider-studio_left {
-  cursor: pointer;
-  position: absolute;
-  top: -120%;
-  left: 0;
-  z-index: 5;
-}
-
-.slider-studio_right {
-  cursor: pointer;
-  position: absolute;
-  top: -120%;
-  right: 40px;
-  z-index: 5;
-}
-
 
 .banners_big {
   display: flex;
@@ -259,14 +299,17 @@ iframe {
     align-items: center;
     cursor: pointer;
     transition: all .2s ease;
+
     &:hover {
       box-shadow: 0 0 10px #fff;
+
       .ban__icon {
         opacity: 1;
         height: 85px;
         width: 85px;
       }
     }
+
     .ban__icon {
 
       opacity: .7;
