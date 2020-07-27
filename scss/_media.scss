@@ -1,79 +1,80 @@
-// @media (max-width: 1000px) {
-//   .banners_big {
-    
-//     #resizable_4, #resizable_5 {
-//       display: none;
-//     }
-//   }
-// }
+@media (max-width: 1000px) {
+  .header {
+    padding: 30px 45px;
+  }
 
-// @media (max-width: 940px) {
+  .scroll-down {
+    bottom: 25px;
+  }
+  .banners_big {
+    #resizable_4, #resizable_5 {
+      display: none;
+    }
+  }
+}
 
-//   .slider-dots__item {
-//     img {
-//       margin: 0 25px;
-//     }
-//   }
+@media (max-width: 800px) {
+  .header {
+    padding: 10px 20px;
+    &__text {
+      &.none {
+        display: none;
+      }
+    }
+  }
+}
 
+@media (max-width: 750px) {
+  .banners {
+    &__item {
+      iframe {
+        top: 0;
+        left: 51%;
+      }
+    }
+  }
 
-//   .slider-studio_left {
-//     top: -30%;
-//   }
+ 
+  .banners_video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-//   .slider-studio_right {
-//     top: -30%;
-//   }
-// }
+  video {
+    outline: none;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 50vh;
+  }
+}
 
-// @media (max-width: 750px) {
-//   .banners {
-//     &__item {
-//       iframe {
-//         top: 0;
-//         left: 51%;
-//       }
-//     }
-//   }
+@media (max-width: 480px) {
+  .header {
+    height: 100vh;
+    &__text {
+      font-size: 24px;
+      line-height: 27px;
+      margin-top: 20px;
+    }
+  }
+}
 
-//   .slider-studio_left {
-//     top: -30%;
-//     left: -16%;
-//   }
+@media (max-width: 400px) {
+  .banners {
+    &__item {
+      iframe {
+        top: 0;
+        left: 65%;
+      }
+    }
+  }
 
-//   .slider-studio_right {
-//     top: 120%;
-//     right: -16%;
-//   }
-
-//   .banners_video {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   video {
-//     outline: none;
-//     margin-bottom: 40px;
-//     width: 100%;
-//     height: 50vh;
-//   }
-// }
-
-// @media (max-width: 400px) {
-//   .banners {
-//     &__item {
-//       iframe {
-//         top: 0;
-//         left: 65%;
-//       }
-//     }
-//   }
-
-//   .slider-studio_left {
-//     top: -35%;
-//     left: -16%;
-//   }
-//   video {
-//     height: 40vh;
-//   }
-// }
+  .slider-studio_left {
+    top: -35%;
+    left: -16%;
+  }
+  video {
+    height: 40vh;
+  }
+}
