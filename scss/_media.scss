@@ -71,14 +71,17 @@
       margin-top: 20px;
     }
     .scroll-down {
-      
       bottom: 20px;
-     
     }    
   }
 }
 
 @media (max-width: 400px) {
+  .header {
+    .scroll-down {
+      display: none;
+    }    
+  }
   .banners {
     &__item {
       iframe {
