@@ -165,8 +165,10 @@ body {
     top: 32px;
     text-transform: uppercase;
     display: flex;
+    
     cursor: pointer;
     .ru {
+      text-decoration: underline;
       margin: 0 10px;
       &.red{
         color: #e30613;
@@ -174,6 +176,7 @@ body {
      
     }
     .en {
+      text-decoration: underline;
       margin: 0 10px;
       &.red{
         color: #e30613;
@@ -201,6 +204,7 @@ body {
     font-size: 32px;
     line-height: 42px;
     text-transform: none;
+    
     &.ru {    
      display: block; 
     }
