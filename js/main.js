@@ -1,5 +1,27 @@
 $(function () {
 
+  $(".ru").on("click", function() {
+    $(".ru").addClass("red")
+    $(".en").removeClass("red")
+
+    $(".header__text_ru").addClass("ru")
+    $(".header__text_en").removeClass("en")
+
+    $(".section_header_ru").addClass("ru")
+    $(".section_header_en").removeClass("en")
+  });
+
+  $(".en").on("click", function() {
+    $(".en").addClass("red")
+    $(".ru").removeClass("red")
+
+    $(".header__text_en").addClass("en")
+    $(".header__text_ru").removeClass("ru")
+
+    $(".section_header_en").addClass("en")
+    $(".section_header_ru").removeClass("ru")
+  });
+
    /* Smooth scroll*/
    $("[data-scroll]").on("click", function (event) {
     event.preventDefault();

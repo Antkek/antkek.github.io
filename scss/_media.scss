@@ -24,6 +24,8 @@
   }
 }
 
+
+
 @media (max-width: 750px) {
   .banners {
     &__item {
@@ -49,14 +51,30 @@
   }
 }
 
+@media (max-width: 675px) {
+  .header {
+    height: 100vh;
+    &__text_ru, &__text_en {
+      font-size: 32px;
+      line-height: 42px;
+      margin-top: 20px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .header {
     height: 100vh;
-    &__text {
+    &__text_ru, &__text_en {
       font-size: 24px;
       line-height: 27px;
       margin-top: 20px;
     }
+    .scroll-down {
+      
+      bottom: 20px;
+     
+    }    
   }
 }
 
